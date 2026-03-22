@@ -5,21 +5,21 @@
 class Kanban < Formula
   desc "Git-native kanban task management CLI — board state driven by commits and CI"
   homepage "https://github.com/jmsargent/Kanban"
-  version "0.57.0"
+  version "0.58.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmsargent/Kanban/releases/download/v0.57.0/kanban_0.57.0_darwin_amd64.tar.gz"
-      sha256 "379f595a96fb7ffe02b7dff690766f6a0643989d278f7b14b01192b3a2f749c5"
+      url "https://github.com/jmsargent/Kanban/releases/download/v0.58.0/kanban_0.58.0_darwin_amd64.tar.gz"
+      sha256 "997f89e1c72506e18ac2a82e3c1f4dcef4fd401d997b25e94f4654f53a4795e4"
 
       define_method(:install) do
         bin.install "kanban"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmsargent/Kanban/releases/download/v0.57.0/kanban_0.57.0_darwin_arm64.tar.gz"
-      sha256 "6c197639e22680c7b58965bba975eaf74f7dbedb33503d14649a4c699aea73bd"
+      url "https://github.com/jmsargent/Kanban/releases/download/v0.58.0/kanban_0.58.0_darwin_arm64.tar.gz"
+      sha256 "fdb770c69c4c665b437c9a95c1d12800fe1534b4377dba5f3420b85c9b24ba1a"
 
       define_method(:install) do
         bin.install "kanban"
@@ -29,15 +29,15 @@ class Kanban < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmsargent/Kanban/releases/download/v0.57.0/kanban_0.57.0_linux_amd64.tar.gz"
-      sha256 "5d8d43cc6978dde30e3a72377587d0cfcdb9d3a826f32896dd798179f4cbc243"
+      url "https://github.com/jmsargent/Kanban/releases/download/v0.58.0/kanban_0.58.0_linux_amd64.tar.gz"
+      sha256 "ce7782d4f07de157af57c78c43e442a77327c9d0834173596bcaa03cb353e93e"
       define_method(:install) do
         bin.install "kanban"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmsargent/Kanban/releases/download/v0.57.0/kanban_0.57.0_linux_arm64.tar.gz"
-      sha256 "200d68aa179c44b8ee77261daea18fb676eb5ef15819acd2c61f9d65fa818d5a"
+      url "https://github.com/jmsargent/Kanban/releases/download/v0.58.0/kanban_0.58.0_linux_arm64.tar.gz"
+      sha256 "3fd99885e158ef05d6bf27c5df7444c6f53c23d0c4f5eff0fc21bff8cab1c78c"
       define_method(:install) do
         bin.install "kanban"
       end
